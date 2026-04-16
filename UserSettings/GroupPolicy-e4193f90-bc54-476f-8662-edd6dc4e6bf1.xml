@@ -1,0 +1,110 @@
+<UserSetting>
+  <Id>e4193f90-bc54-476f-8662-edd6dc4e6bf1</Id>
+  <FriendlyName>Default User Settings - Control Panel | Personalization</FriendlyName>
+  <Description>Lock the user session automatically</Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-02-20 16:32:07</CreatedDate>
+  <LastModifiedDate>2026-04-16 11:08:02</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>ControlPanelDisplay_77E1BED7.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>CPL_Personalization_SetScreenSaver</PolicyName>
+        <PolicyDisplayName>Force specific screen saver</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\Control Panel\Desktop</PolicyKey>
+        <PolicyValueName>
+        </PolicyValueName>
+        <Enabled>True</Enabled>
+        <Elements>
+          <ConfiguredPolicyElement>
+            <ElementId>ScreenSaverFilename</ElementId>
+            <RegistryKey>Software\Policies\Microsoft\Windows\Control Panel\Desktop</RegistryKey>
+            <RegistryValueName>SCRNSAVE.EXE</RegistryValueName>
+            <Value>scrnsave.scr</Value>
+            <ValueType>REG_SZ</ValueType>
+          </ConfiguredPolicyElement>
+        </Elements>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>CPL_Personalization_EnableScreenSaver</PolicyName>
+        <PolicyDisplayName>Enable screen saver</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\Control Panel\Desktop</PolicyKey>
+        <PolicyValueName>ScreenSaveActive</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>CPL_Personalization_ScreenSaverIsSecure</PolicyName>
+        <PolicyDisplayName>Password protect the screen saver</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\Control Panel\Desktop</PolicyKey>
+        <PolicyValueName>ScreenSaverIsSecure</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>CPL_Personalization_ScreenSaverTimeOut</PolicyName>
+        <PolicyDisplayName>Screen saver timeout</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\Control Panel\Desktop</PolicyKey>
+        <PolicyValueName>
+        </PolicyValueName>
+        <Enabled>True</Enabled>
+        <Elements>
+          <ConfiguredPolicyElement>
+            <ElementId>ScreenSaverTimeOutFreqSpin</ElementId>
+            <RegistryKey>Software\Policies\Microsoft\Windows\Control Panel\Desktop</RegistryKey>
+            <RegistryValueName>ScreenSaveTimeOut</RegistryValueName>
+            <Value>900</Value>
+            <ValueType>REG_SZ</ValueType>
+          </ConfiguredPolicyElement>
+        </Elements>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\Control Panel\Desktop</KeyPath>
+      <ValueName>SCRNSAVE.EXE</ValueName>
+      <ValueData>scrnsave.scr</ValueData>
+      <ValueType>REG_SZ</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\Control Panel\Desktop</KeyPath>
+      <ValueName>ScreenSaveActive</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_SZ</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\Control Panel\Desktop</KeyPath>
+      <ValueName>ScreenSaverIsSecure</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_SZ</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\Control Panel\Desktop</KeyPath>
+      <ValueName>ScreenSaveTimeOut</ValueName>
+      <ValueData>900</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>

@@ -1,0 +1,106 @@
+<UserSetting>
+  <Id>539e752a-347b-41f6-9265-cb99b52bfea6</Id>
+  <FriendlyName>Default User Settings - Control Panel | Programs</FriendlyName>
+  <Description>Hide certain windows settings for users</Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-02-20 16:35:26</CreatedDate>
+  <LastModifiedDate>2026-04-16 11:06:49</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>Programs_9C01DCE4.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>NoGetPrograms</PolicyName>
+        <PolicyDisplayName>Hide "Get Programs" page</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</PolicyKey>
+        <PolicyValueName>NoGetPrograms</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>NoInstalledUpdates</PolicyName>
+        <PolicyDisplayName>Hide "Installed Updates" page</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</PolicyKey>
+        <PolicyValueName>NoInstalledUpdates</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>NoProgramsAndFeatures</PolicyName>
+        <PolicyDisplayName>Hide "Programs and Features" page</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</PolicyKey>
+        <PolicyValueName>NoProgramsAndFeatures</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>NoWindowsFeatures</PolicyName>
+        <PolicyDisplayName>Hide "Windows Features"</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</PolicyKey>
+        <PolicyValueName>NoWindowsFeatures</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>NoProgramsCPL</PolicyName>
+        <PolicyDisplayName>Hide the Programs Control Panel</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</PolicyKey>
+        <PolicyValueName>NoProgramsCPL</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</KeyPath>
+      <ValueName>NoGetPrograms</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</KeyPath>
+      <ValueName>NoInstalledUpdates</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</KeyPath>
+      <ValueName>NoProgramsAndFeatures</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</KeyPath>
+      <ValueName>NoWindowsFeatures</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\Programs</KeyPath>
+      <ValueName>NoProgramsCPL</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>

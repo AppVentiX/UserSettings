@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Default User Settings - Microsoft Edge",
+    "description": "Basic Edge settings",
+    "type": "GroupPolicy",
+    "version": "2026.416.1130",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-015c7929-2e83-4f88-96c3-f24438ca09df.xml",
+    "admx": "msedge_4EF42AD8.admx",
+    "adml": "msedge_4EF42AD8.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - Windows Components | Autoplay",
+    "description": "Disable autoplay (security)",
+    "type": "GroupPolicy",
+    "version": "2026.416.1130",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-18034756-49d1-4c85-b012-55527f9174b4.xml",
+    "admx": "AutoPlay_99C0E5F0.admx",
+    "adml": "AutoPlay_99C0E5F0.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - Windows Components | Cloud Content",
+    "description": "Disable cloud content access",
+    "type": "GroupPolicy",
+    "version": "2026.416.1130",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-49e1b134-d94a-4f1f-9aaa-fb6e11877d3f.xml",
+    "admx": "CloudContent_4510EC47.admx",
+    "adml": "CloudContent_4510EC47.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - Control Panel | Programs",
+    "description": "Hide certain windows settings for users",
+    "type": "GroupPolicy",
+    "version": "2026.416.1115",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-539e752a-347b-41f6-9265-cb99b52bfea6.xml",
+    "admx": "Programs_9C01DCE4.admx",
+    "adml": "Programs_9C01DCE4.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - Control Panel",
+    "description": "Hide certain startmenu and controlpanel settings for users",
+    "type": "GroupPolicy",
+    "version": "2026.416.1115",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-5be2fa01-c3e9-43d2-9bc9-712aa020520d.xml",
+    "admx": "ControlPanel_99BB5AC9.admx",
+    "adml": "ControlPanel_99BB5AC9.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - Start Menu",
+    "description": "Configure startmenu",
+    "type": "GroupPolicy",
+    "version": "2026.416.1400",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-a8ddd697-a4c2-433a-ad40-368ad87d2ba0.xml",
+    "admx": "StartMenu_6F2E3448.admx",
+    "adml": "StartMenu_6F2E3448.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - Desktop",
+    "description": "Cleanup the desktop",
+    "type": "GroupPolicy",
+    "version": "2026.416.1115",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-b105cd49-3fcf-4bee-ae7a-14101ce1d3b5.xml",
+    "admx": "Desktop_F56E36EC.admx",
+    "adml": "Desktop_F56E36EC.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - Control Panel | Personalization",
+    "description": "Lock the user session automatically",
+    "type": "GroupPolicy",
+    "version": "2026.416.1115",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-e4193f90-bc54-476f-8662-edd6dc4e6bf1.xml",
+    "admx": "ControlPanelDisplay_77E1BED7.admx",
+    "adml": "ControlPanelDisplay_77E1BED7.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - Windows Components | Windows Copilot",
+    "description": "Disable Copilot",
+    "type": "GroupPolicy",
+    "version": "2026.416.1130",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-f06548c5-8ede-41f5-a7e4-12b4063d7950.xml",
+    "admx": "WindowsCopilot_388AD1E6.admx",
+    "adml": "WindowsCopilot_388AD1E6.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - Windows Components | Windows Update",
+    "description": "Hide Windows Updates for users",
+    "type": "GroupPolicy",
+    "version": "2026.416.1130",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-f8f0ff8a-0865-40d8-b4e9-6569c247fc8a.xml",
+    "admx": "WindowsUpdate_F8B52DA1.admx",
+    "adml": "WindowsUpdate_F8B52DA1.adml",
+    "admxlanguage": "en-US"
+  }
+]

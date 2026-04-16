@@ -1,0 +1,60 @@
+<UserSetting>
+  <Id>f8f0ff8a-0865-40d8-b4e9-6569c247fc8a</Id>
+  <FriendlyName>Default User Settings - Windows Components | Windows Update</FriendlyName>
+  <Description>Hide Windows Updates for users</Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-02-20 16:52:34</CreatedDate>
+  <LastModifiedDate>2026-04-16 11:23:56</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>WindowsUpdate_F8B52DA1.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>RemoveWindowsUpdate</PolicyName>
+        <PolicyDisplayName>Remove access to use all Windows Update features</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate</PolicyKey>
+        <PolicyValueName>DisableWindowsUpdateAccess</PolicyValueName>
+        <Enabled>True</Enabled>
+        <Elements>
+          <ConfiguredPolicyElement>
+            <ElementId>RemoveWindowsUpdateMode</ElementId>
+            <RegistryKey>Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate</RegistryKey>
+            <RegistryValueName>DisableWindowsUpdateAccessMode</RegistryValueName>
+            <Value>0 - Do not show any notifications</Value>
+            <ValueType>REG_SZ</ValueType>
+          </ConfiguredPolicyElement>
+        </Elements>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate</KeyPath>
+      <ValueName>DisableWindowsUpdateAccess</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate</KeyPath>
+      <ValueName>DisableWindowsUpdateAccessMode</ValueName>
+      <ValueData>0</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>

@@ -1,0 +1,42 @@
+<UserSetting>
+  <Id>f06548c5-8ede-41f5-a7e4-12b4063d7950</Id>
+  <FriendlyName>Default User Settings - Windows Components | Windows Copilot</FriendlyName>
+  <Description>Disable Copilot</Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-02-20 16:50:54</CreatedDate>
+  <LastModifiedDate>2026-04-16 11:19:42</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>WindowsCopilot_388AD1E6.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>TurnOffWindowsCopilot</PolicyName>
+        <PolicyDisplayName>Turn off Windows Copilot</PolicyDisplayName>
+        <PolicyKey>SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot</PolicyKey>
+        <PolicyValueName>TurnOffWindowsCopilot</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot</KeyPath>
+      <ValueName>TurnOffWindowsCopilot</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>

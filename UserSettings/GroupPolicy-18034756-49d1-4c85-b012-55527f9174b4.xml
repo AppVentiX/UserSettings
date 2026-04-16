@@ -1,0 +1,52 @@
+<UserSetting>
+  <Id>18034756-49d1-4c85-b012-55527f9174b4</Id>
+  <FriendlyName>Default User Settings - Windows Components | Autoplay</FriendlyName>
+  <Description>Disable autoplay (security)</Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-02-20 16:45:48</CreatedDate>
+  <LastModifiedDate>2026-04-16 11:18:36</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>AutoPlay_99C0E5F0.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>Autorun</PolicyName>
+        <PolicyDisplayName>Turn off Autoplay</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</PolicyKey>
+        <PolicyValueName>
+        </PolicyValueName>
+        <Enabled>True</Enabled>
+        <Elements>
+          <ConfiguredPolicyElement>
+            <ElementId>Autorun_Box</ElementId>
+            <RegistryKey>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</RegistryKey>
+            <RegistryValueName>NoDriveTypeAutoRun</RegistryValueName>
+            <Value>All drives</Value>
+            <ValueType>REG_SZ</ValueType>
+          </ConfiguredPolicyElement>
+        </Elements>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</KeyPath>
+      <ValueName>NoDriveTypeAutoRun</ValueName>
+      <ValueData>255</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>

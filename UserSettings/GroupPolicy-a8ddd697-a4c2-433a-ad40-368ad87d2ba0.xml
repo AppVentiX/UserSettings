@@ -1,0 +1,42 @@
+<UserSetting>
+  <Id>a8ddd697-a4c2-433a-ad40-368ad87d2ba0</Id>
+  <FriendlyName>Default User Settings - Start Menu</FriendlyName>
+  <Description>Configure startmenu</Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-02-20 16:44:44</CreatedDate>
+  <LastModifiedDate>2026-04-16 13:54:39</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>StartMenu_6F2E3448.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>HideRecentlyAddedApps</PolicyName>
+        <PolicyDisplayName>Remove "Recently added" list from Start Menu</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\Explorer</PolicyKey>
+        <PolicyValueName>HideRecentlyAddedApps</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\Explorer</KeyPath>
+      <ValueName>HideRecentlyAddedApps</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>

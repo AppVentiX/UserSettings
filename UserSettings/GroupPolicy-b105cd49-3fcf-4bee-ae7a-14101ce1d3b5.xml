@@ -1,0 +1,42 @@
+<UserSetting>
+  <Id>b105cd49-3fcf-4bee-ae7a-14101ce1d3b5</Id>
+  <FriendlyName>Default User Settings - Desktop</FriendlyName>
+  <Description>Cleanup the desktop</Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-02-20 16:37:20</CreatedDate>
+  <LastModifiedDate>2026-04-16 11:12:15</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>Desktop_F56E36EC.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>NoRecycleBinIcon</PolicyName>
+        <PolicyDisplayName>Remove Recycle Bin icon from desktop</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\NonEnum</PolicyKey>
+        <PolicyValueName>{645FF040-5081-101B-9F08-00AA002F954E}</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\NonEnum</KeyPath>
+      <ValueName>{645FF040-5081-101B-9F08-00AA002F954E}</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>

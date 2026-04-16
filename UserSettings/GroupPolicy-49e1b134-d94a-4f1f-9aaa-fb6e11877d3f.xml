@@ -1,0 +1,116 @@
+<UserSetting>
+  <Id>49e1b134-d94a-4f1f-9aaa-fb6e11877d3f</Id>
+  <FriendlyName>Default User Settings - Windows Components | Cloud Content</FriendlyName>
+  <Description>Disable cloud content access</Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-02-20 16:48:58</CreatedDate>
+  <LastModifiedDate>2026-04-16 11:19:07</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>CloudContent_4510EC47.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>ConfigureWindowsSpotlight</PolicyName>
+        <PolicyDisplayName>Configure Windows spotlight on lock screen</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\CloudContent</PolicyKey>
+        <PolicyValueName>ConfigureWindowsSpotlight</PolicyValueName>
+        <Enabled>False</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>DisableTailoredExperiencesWithDiagnosticData</PolicyName>
+        <PolicyDisplayName>Do not use diagnostic data for tailored experiences</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\CloudContent</PolicyKey>
+        <PolicyValueName>DisableTailoredExperiencesWithDiagnosticData</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>DisableWindowsSpotlightFeatures</PolicyName>
+        <PolicyDisplayName>Turn off all Windows spotlight features</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\CloudContent</PolicyKey>
+        <PolicyValueName>DisableWindowsSpotlightFeatures</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>DisableSpotlightCollectionOnDesktop</PolicyName>
+        <PolicyDisplayName>Turn off Spotlight collection on Desktop</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\CloudContent</PolicyKey>
+        <PolicyValueName>DisableSpotlightCollectionOnDesktop</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>DisableWindowsSpotlightWindowsWelcomeExperience</PolicyName>
+        <PolicyDisplayName>Turn off the Windows Welcome Experience</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\CloudContent</PolicyKey>
+        <PolicyValueName>DisableWindowsSpotlightWindowsWelcomeExperience</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\CloudContent</KeyPath>
+      <ValueName>ConfigureWindowsSpotlight</ValueName>
+      <ValueData>2</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\CloudContent</KeyPath>
+      <ValueName>IncludeEnterpriseSpotlight</ValueName>
+      <ValueData>
+      </ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Delete</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\CloudContent</KeyPath>
+      <ValueName>DisableTailoredExperiencesWithDiagnosticData</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\CloudContent</KeyPath>
+      <ValueName>DisableWindowsSpotlightFeatures</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\CloudContent</KeyPath>
+      <ValueName>DisableSpotlightCollectionOnDesktop</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\CloudContent</KeyPath>
+      <ValueName>DisableWindowsSpotlightWindowsWelcomeExperience</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>
