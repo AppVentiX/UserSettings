@@ -5,7 +5,7 @@
   <Type>GroupPolicy</Type>
   <ExecutionOrder>0</ExecutionOrder>
   <CreatedDate>2026-02-20 16:44:44</CreatedDate>
-  <LastModifiedDate>2026-04-16 13:54:39</LastModifiedDate>
+  <LastModifiedDate>2026-06-29 17:42:51</LastModifiedDate>
   <ProcessAtLogin>True</ProcessAtLogin>
   <ProcessAtRefresh>True</ProcessAtRefresh>
   <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
@@ -26,6 +26,13 @@
         <PolicyValueName>HideRecentlyAddedApps</PolicyValueName>
         <Enabled>True</Enabled>
       </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>NoCommonGroups</PolicyName>
+        <PolicyDisplayName>Remove common program groups from Start Menu</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</PolicyKey>
+        <PolicyValueName>NoCommonGroups</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
     </ConfiguredPolicies>
   </GroupPolicySettings>
   <RegistryEntries>
@@ -33,6 +40,15 @@
       <RootKey>HKEY_CURRENT_USER</RootKey>
       <KeyPath>Software\Policies\Microsoft\Windows\Explorer</KeyPath>
       <ValueName>HideRecentlyAddedApps</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</KeyPath>
+      <ValueName>NoCommonGroups</ValueName>
       <ValueData>1</ValueData>
       <ValueType>REG_DWORD</ValueType>
       <Action>Set</Action>

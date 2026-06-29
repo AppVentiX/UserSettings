@@ -58,7 +58,7 @@
     "name": "Default User Settings - Start Menu",
     "description": "Configure startmenu",
     "type": "GroupPolicy",
-    "version": "2026.416.1400",
+    "version": "2026.629.1745",
     "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
     "usersetting": "GroupPolicy-a8ddd697-a4c2-433a-ad40-368ad87d2ba0.xml",
     "admx": "StartMenu_6F2E3448.admx",
