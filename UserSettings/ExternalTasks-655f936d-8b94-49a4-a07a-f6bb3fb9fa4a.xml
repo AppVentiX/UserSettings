@@ -1,0 +1,61 @@
+<UserSetting>
+  <Id>655f936d-8b94-49a4-a07a-f6bb3fb9fa4a</Id>
+  <FriendlyName>Default background (Example)</FriendlyName>
+  <Description>Modify Path inside</Description>
+  <Type>ExternalTasks</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-03-18 16:35:22</CreatedDate>
+  <LastModifiedDate>2026-08-20 14:40:01</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>False</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <RunOnce>True</RunOnce>
+  <RunOnceResetToken>
+  </RunOnceResetToken>
+  <ExternalTasks>
+    <ExternalTask>
+      <ExecutablePath>Click edit to modify the script</ExecutablePath>
+      <Arguments>
+      </Arguments>
+      <RunHidden>True</RunHidden>
+      <TimeoutSeconds>60</TimeoutSeconds>
+      <ScriptContent>#start with a sleep to allow the session to start
+Start-Sleep -Seconds 20
+
+# Default wallpaper location
+$wallpaperPath = "\\path\to\Background.png"
+
+# Validate the path exists
+if (-Not (Test-Path $wallpaperPath)) {
+    Write-Error "Wallpaper image not found at: $wallpaperPath"
+    exit
+}
+
+# Set registry key to change the wallpaper
+Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name Wallpaper -Value $wallpaperPath
+
+# Set wallpaper style (Fill = 10, Fit = 6, Stretch = 2, Tile = 0, Center = 0, Span = 22)
+Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name WallpaperStyle -Value "10"
+Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name TileWallpaper -Value "0"
+
+# Refresh the desktop to apply changes
+Add-Type -TypeDefinition @"
+using System.Runtime.InteropServices;
+public class Wallpaper {
+    [DllImport("user32.dll", SetLastError = true)]
+    public static extern bool SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);
+}
+"@
+
+[Wallpaper]::SystemParametersInfo(20, 0, $wallpaperPath, 3)</ScriptContent>
+      <ScriptType>PS1</ScriptType>
+      <WaitForCompletion>True</WaitForCompletion>
+    </ExternalTask>
+  </ExternalTasks>
+</UserSetting>
