@@ -1,8 +1,7 @@
 <UserSetting>
   <Id>41699b8d-d4fe-40ef-9930-b44f551593b7</Id>
-  <FriendlyName>Default User Settings - Disable CMD and Regedit</FriendlyName>
-  <Description>
-  </Description>
+  <FriendlyName>Default User Settings - System | Disable CMD and Regedit</FriendlyName>
+  <Description>Disable CMD and Regedit</Description>
   <Type>GroupPolicy</Type>
   <ExecutionOrder>0</ExecutionOrder>
   <CreatedDate>2026-03-19 16:16:57</CreatedDate>

@@ -108,5 +108,27 @@
     "admx": "WindowsUpdate_F8B52DA1.admx",
     "adml": "WindowsUpdate_F8B52DA1.adml",
     "admxlanguage": "en-US"
+  },
+  {
+    "name": "Default User Settings - System | Disable CMD and Regedit",
+    "description": "Disable CMD and Regedit",
+    "type": "GroupPolicy",
+    "version": "2026.820.1500",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "GroupPolicy-41699b8d-d4fe-40ef-9930-b44f551593b7.xml",
+    "admx": "Shell-CommandPrompt-RegEditTools_5590E4B9.admx",
+    "adml": "Shell-CommandPrompt-RegEditTools_5590E4B9.adml",
+    "admxlanguage": "en-US"
+  },
+  {
+    "name": "Example - Default background",
+    "description": "Set the default background",
+    "type": "ExternalTasks",
+    "version": "2026.820.1500",
+    "baseurl": "https://github.com/AppVentiX/UserSettings/raw/refs/heads/<branch>/UserSettings",
+    "usersetting": "ExternalTasks-655f936d-8b94-49a4-a07a-f6bb3fb9fa4a.xml",
+    "admx": "",
+    "adml": "",
+    "admxlanguage": ""
   }
 ]
