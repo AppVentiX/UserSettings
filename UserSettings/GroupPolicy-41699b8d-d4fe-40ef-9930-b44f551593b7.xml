@@ -1,0 +1,79 @@
+<UserSetting>
+  <Id>41699b8d-d4fe-40ef-9930-b44f551593b7</Id>
+  <FriendlyName>Default User Settings - Disable CMD and Regedit</FriendlyName>
+  <Description>
+  </Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>0</ExecutionOrder>
+  <CreatedDate>2026-03-19 16:16:57</CreatedDate>
+  <LastModifiedDate>2026-08-20 14:28:35</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>Shell-CommandPrompt-RegEditTools_5590E4B9.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>DisableCMD</PolicyName>
+        <PolicyDisplayName>Prevent access to the command prompt</PolicyDisplayName>
+        <PolicyKey>Software\Policies\Microsoft\Windows\System</PolicyKey>
+        <PolicyValueName>
+        </PolicyValueName>
+        <Enabled>True</Enabled>
+        <Elements>
+          <ConfiguredPolicyElement>
+            <ElementId>DisableCMDScripts</ElementId>
+            <RegistryKey>Software\Policies\Microsoft\Windows\System</RegistryKey>
+            <RegistryValueName>DisableCMD</RegistryValueName>
+            <Value>No</Value>
+            <ValueType>REG_SZ</ValueType>
+          </ConfiguredPolicyElement>
+        </Elements>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>DisableRegedit</PolicyName>
+        <PolicyDisplayName>Prevent access to registry editing tools</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\System</PolicyKey>
+        <PolicyValueName>
+        </PolicyValueName>
+        <Enabled>True</Enabled>
+        <Elements>
+          <ConfiguredPolicyElement>
+            <ElementId>DisableRegeditMode</ElementId>
+            <RegistryKey>Software\Microsoft\Windows\CurrentVersion\Policies\System</RegistryKey>
+            <RegistryValueName>DisableRegistryTools</RegistryValueName>
+            <Value>No</Value>
+            <ValueType>REG_SZ</ValueType>
+          </ConfiguredPolicyElement>
+        </Elements>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Policies\Microsoft\Windows\System</KeyPath>
+      <ValueName>DisableCMD</ValueName>
+      <ValueData>2</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\System</KeyPath>
+      <ValueName>DisableRegistryTools</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>
