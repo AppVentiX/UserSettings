@@ -1,0 +1,84 @@
+<UserSetting>
+  <Id>40a60bfa-cfff-42cd-b7fb-78e472fe1134</Id>
+  <FriendlyName>Default User Settings - Desktop - Background</FriendlyName>
+  <Description>Configure the users background</Description>
+  <Type>GroupPolicy</Type>
+  <ExecutionOrder>100</ExecutionOrder>
+  <CreatedDate>2026-09-24 14:57:09</CreatedDate>
+  <LastModifiedDate>2026-09-24 14:57:09</LastModifiedDate>
+  <ProcessAtLogin>True</ProcessAtLogin>
+  <ProcessAtRefresh>True</ProcessAtRefresh>
+  <ProcessAtReconnectAndUnlock>False</ProcessAtReconnectAndUnlock>
+  <MachineGroups>
+    <MachineGroup>All</MachineGroup>
+  </MachineGroups>
+  <MachineGroupFriendlyNames>
+    <FriendlyName>All Machine Groups</FriendlyName>
+  </MachineGroupFriendlyNames>
+  <GroupPolicySettings>
+    <AdmxFilePath>Desktop_C0A31C6C.admx</AdmxFilePath>
+    <AdmxLanguage>en-US</AdmxLanguage>
+    <ConfiguredPolicies>
+      <ConfiguredPolicy>
+        <PolicyName>NoActiveDesktopChanges</PolicyName>
+        <PolicyDisplayName>Prohibit changes</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</PolicyKey>
+        <PolicyValueName>NoActiveDesktopChanges</PolicyValueName>
+        <Enabled>True</Enabled>
+      </ConfiguredPolicy>
+      <ConfiguredPolicy>
+        <PolicyName>Wallpaper</PolicyName>
+        <PolicyDisplayName>Desktop Wallpaper</PolicyDisplayName>
+        <PolicyKey>Software\Microsoft\Windows\CurrentVersion\Policies\System</PolicyKey>
+        <PolicyValueName>
+        </PolicyValueName>
+        <Enabled>True</Enabled>
+        <Elements>
+          <ConfiguredPolicyElement>
+            <ElementId>WallpaperName</ElementId>
+            <RegistryKey>Software\Microsoft\Windows\CurrentVersion\Policies\System</RegistryKey>
+            <RegistryValueName>Wallpaper</RegistryValueName>
+            <Value>C:\Windows\Web\Wallpaper\Windows\img0.jpg</Value>
+            <ValueType>REG_SZ</ValueType>
+          </ConfiguredPolicyElement>
+          <ConfiguredPolicyElement>
+            <ElementId>WallpaperStyle</ElementId>
+            <RegistryKey>Software\Microsoft\Windows\CurrentVersion\Policies\System</RegistryKey>
+            <RegistryValueName>WallpaperStyle</RegistryValueName>
+            <Value>Stretch</Value>
+            <ValueType>REG_SZ</ValueType>
+          </ConfiguredPolicyElement>
+        </Elements>
+      </ConfiguredPolicy>
+    </ConfiguredPolicies>
+  </GroupPolicySettings>
+  <RegistryEntries>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</KeyPath>
+      <ValueName>NoActiveDesktopChanges</ValueName>
+      <ValueData>1</ValueData>
+      <ValueType>REG_DWORD</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\System</KeyPath>
+      <ValueName>Wallpaper</ValueName>
+      <ValueData>C:\Windows\Web\Wallpaper\Windows\img0.jpg</ValueData>
+      <ValueType>REG_SZ</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+    <RegistryEntry>
+      <RootKey>HKEY_CURRENT_USER</RootKey>
+      <KeyPath>Software\Microsoft\Windows\CurrentVersion\Policies\System</KeyPath>
+      <ValueName>WallpaperStyle</ValueName>
+      <ValueData>2</ValueData>
+      <ValueType>REG_SZ</ValueType>
+      <Action>Set</Action>
+      <DeleteKey>False</DeleteKey>
+    </RegistryEntry>
+  </RegistryEntries>
+</UserSetting>
